@@ -7,7 +7,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
 //cho order 
 const placeOrder = async (req,res) =>{
 
-    const frontend_url = "http://localhost:5173" //nếu backend dùng port 74 thì fe dùng 73 và ngược lại
+    const frontend_url = "https://mern-orderfood-frontend.onrender.com" //nếu backend dùng port 74 thì fe dùng 73 và ngược lại
 
     try {
         const newOrder = new orderModel({
@@ -109,32 +109,4 @@ const updateStatus = async (req,res) => {
     }
 }
 
-const placeOrderCOD = async (req,res) => {
-
-    try {
-        const {userId, items, amount, address} = req.body;
-
-        const orderData = {
-            userId,
-            items,
-            address,
-            amount,
-            date: Date.now(),
-            paymentMethod:"COD",
-            payment:false,
-        }
-
-        const newOrder = new orderModel(orderData)
-        await newOrder.save()
-
-        await userModel.findByIdAndUpdate(userId,{cartData:{}})
-
-        res.json({success:true,message:"Đã đặt hàng"})
-
-    } catch (error) {
-        console.log(error);
-        res.json({success:false,message:"Lỗi"})
-    }
-
-}
-export {placeOrder,verifyOrder,userOrders,listOrders,updateStatus,placeOrderCOD};
+export {placeOrder,verifyOrder,userOrders,listOrders,updateStatus};
