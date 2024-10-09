@@ -7,6 +7,7 @@ const orderSchema = new mongoose.Schema({
     address:{type:Object,required:true},
     status:{type:String,default:"Đang được giao"},
     date:{type:Date,default:Date.now()},
+    //paymentMethod: { type:String, required: true},
     payment:{type:Boolean,default:false}
 })
 

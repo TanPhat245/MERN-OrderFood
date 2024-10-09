@@ -84,37 +84,26 @@ export const assets = {
 
 export const menu_list = [
     {
-        menu_name: "Mi",
+        menu_name: "Mì",
         menu_image: menu_1
     },
     {
-        menu_name: "Trẻ em",
+        menu_name: "Cơm",
         menu_image: menu_2
     },
     {
-        menu_name: "Deserts",
+        menu_name: "Nước",
         menu_image: menu_3
     },
     {
-        menu_name: "Sandwich",
+        menu_name: "Bánh Ngọt",
         menu_image: menu_4
     },
     {
-        menu_name: "Cake",
+        menu_name: "Bánh Mặn",
         menu_image: menu_5
     },
-    {
-        menu_name: "Pure Veg",
-        menu_image: menu_6
-    },
-    {
-        menu_name: "Pasta",
-        menu_image: menu_7
-    },
-    {
-        menu_name: "Noodles",
-        menu_image: menu_8
-    }]
+]
 
 export const food_list = [
     {

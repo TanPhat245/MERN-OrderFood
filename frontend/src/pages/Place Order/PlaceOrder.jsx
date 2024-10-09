@@ -27,7 +27,7 @@ const PlaceOrder = () => {
   }
 
   const placeOrder = async (event) => {
-    event.preventDefault();
+    event.preventDefault(); 
     let orderItems = [];
     food_list.map((item)=>{
       if (cartItems[item._id]>0) {
@@ -98,8 +98,8 @@ const PlaceOrder = () => {
                   <b>Tổng tiền</b>
                   <b>{getTotalCartAmount()}</b>
               </div>
-              <hr />
-              <button type='submit'>Thanh toán với Payment</button>   
+              <hr />                
+              <button  type='submit'>Thanh toán với Payment</button>  
         </div>
         </div>
     </form>

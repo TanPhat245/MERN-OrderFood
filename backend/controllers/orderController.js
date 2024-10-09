@@ -109,4 +109,32 @@ const updateStatus = async (req,res) => {
     }
 }
 
-export {placeOrder,verifyOrder,userOrders,listOrders,updateStatus};
+const placeOrderCOD = async (req,res) => {
+
+    try {
+        const {userId, items, amount, address} = req.body;
+
+        const orderData = {
+            userId,
+            items,
+            address,
+            amount,
+            date: Date.now(),
+            paymentMethod:"COD",
+            payment:false,
+        }
+
+        const newOrder = new orderModel(orderData)
+        await newOrder.save()
+
+        await userModel.findByIdAndUpdate(userId,{cartData:{}})
+
+        res.json({success:true,message:"Đã đặt hàng"})
+
+    } catch (error) {
+        console.log(error);
+        res.json({success:false,message:"Lỗi"})
+    }
+
+}
+export {placeOrder,verifyOrder,userOrders,listOrders,updateStatus,placeOrderCOD};
