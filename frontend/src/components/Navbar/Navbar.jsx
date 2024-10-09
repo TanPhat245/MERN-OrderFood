@@ -24,7 +24,7 @@ const logout = () =>{
         <Link to='/'><li onClick={()=>setMenu("home")} className={menu==="home"?"active":""}>Trang chủ</li></Link>
         <a href='#explore-menu' onClick={()=>setMenu("menu")} className={menu==="menu"?"active":""}>Menu</a>
         <a href='#app-download' onClick={()=>setMenu("mobile-app")} className={menu==="mobile-app"?"active":""}>Mobile-app</a>
-        <a href='#footer' onClick={()=>setMenu("contact")} className={menu==="contact"?"active":""}>Kết nối</a>
+        <a href='#footer' onClick={()=>setMenu("contact")} className={menu==="contact"?"active":""}>Đối tá<!--  --></a>
       </ul>
       <div className="navbar-right">
         <img src={assets.search_icon}  alt="" />
