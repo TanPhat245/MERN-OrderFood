@@ -4,8 +4,10 @@
     gap: 20px;
 }
 .explore-menu h1{
+    padding-top: 50px;
     color: #262626;
     font-weight: 500;
+    text-align: center;
 }
 .explore-menu-text{
     max-width: 60%;
@@ -29,6 +31,7 @@
     cursor: pointer;
     border-radius: 50%;
     transition: 0.2s;
+    margin: 10px;
 }
 .explore-menu-list-item p{
     margin-top: 10px;

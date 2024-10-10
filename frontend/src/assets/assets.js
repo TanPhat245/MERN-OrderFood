@@ -43,7 +43,7 @@ import food_29 from './food_29.png'
 import food_30 from './food_30.png'
 import food_31 from './food_31.png'
 import food_32 from './food_32.png'
-
+import congphing from './congphing.png'
 import add_icon_white from './add_icon_white.png'
 import add_icon_green from './add_icon_green.png'
 import remove_icon_red from './remove_icon_red.png'
@@ -59,7 +59,11 @@ import profile_icon from './profile_icon.png'
 import bag_icon from './bag_icon.png'
 import logout_icon from './logout_icon.png'
 import parcel_icon from './parcel_icon.png'
-
+import img_cp from './img_cp.jpg'
+import eating from './eating.png'
+import fast_deli from './fast-delivery.png'
+import cooking from './cooking.png'
+import planning from './planning.png'
 export const assets = {
     logo,
     basket_icon,
@@ -79,7 +83,13 @@ export const assets = {
     profile_icon,
     logout_icon,
     bag_icon,
-    parcel_icon
+    parcel_icon,
+    congphing,
+    img_cp,
+    eating,
+    fast_deli,
+    cooking,
+    planning
 }
 
 export const menu_list = [

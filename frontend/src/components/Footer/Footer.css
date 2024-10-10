@@ -22,9 +22,11 @@
     gap: 20px;
 }
 
+
 .footer-content-left, .footer-content-right, .footer-content-center li {
     list-style: none;
     margin-bottom: 10px;
+    
 }
 .footer-content-left, .footer-content-right, .footer-content-center h2{
     color: white;

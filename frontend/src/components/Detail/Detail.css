@@ -1,0 +1,48 @@
+.wrapper{
+    width: 100%;
+    min-height: 50vh;
+    overflow: hidden;
+    background-color: #ddd;
+}
+.row{
+    width: 100%;
+    padding: 50px 100px;
+}
+.image-section{
+    width: 30%;
+    float: left;
+}
+.image-section img{
+    width: 100%;
+    height: auto;
+}
+.content{
+    width: 60%;
+    float: left;
+    margin-left:100px;
+}
+.content h2{
+    font-size: 40px;
+    color: #b60112;
+    margin-top: 15px;
+}
+.content p{
+    font-size: 20px;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+.content p span{
+    font-size: small;
+    margin-left: 100px;
+}
+@media (max-width: 768px){
+    .image-section{
+        width: 100%;
+        float: none;
+    }
+    .content{
+        width: 100%;
+        float: none;
+        margin-left: 0px;
+    }
+}
