@@ -31,7 +31,7 @@ const InstructOrder = () => {
               <img src={assets.fast_deli} alt="" />
             </div>
             <h2>Giao hàng</h2>
-            <p>Đội ngũ giao hàng của Công Phượng sẽ giao tận nơi các phần ăn cho bạn mỗi ngày.</p>
+            <p>Đội ngũ giao hàng sẽ giao tận nơi các phần ăn cho bạn mỗi ngày.</p>
           </div>
 
           <div className='card'>
@@ -39,7 +39,7 @@ const InstructOrder = () => {
               <img src={assets.eating} alt="" />
             </div>
             <h2>Thưởng thức</h2>
-            <p>Không cần suy nghĩ, shopping hay nấu nướng dầu mỡ, chỉ cần hâm và thưởng thức!</p>
+            <p>Không cần suy nghĩ chỉ cần hâm và thưởng thức!</p>
           </div>
         </div>
       </div>
