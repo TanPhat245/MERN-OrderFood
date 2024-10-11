@@ -1,48 +1,27 @@
-.wrapper{
-    width: 100%;
-    min-height: 50vh;
-    overflow: hidden;
-    background-color: #ddd;
-}
-.row{
-    width: 100%;
-    padding: 50px 100px;
-}
-.image-section{
-    width: 30%;
-    float: left;
-}
-.image-section img{
+.banner-card{
     width: 100%;
     height: auto;
+    top: -200px;
 }
-.content{
-    width: 60%;
-    float: left;
-    margin-left:100px;
+.banner-card img{
+    width: 100%;
 }
-.content h2{
+.banner-card{
+    position: relative;
+}
+.banner-content{
+    position: absolute;
+    top: 30%;
+    color: aliceblue;
+    padding: 10px;
+    left: 60%;
     font-size: 40px;
-    color: #b60112;
-    margin-top: 15px;
 }
-.content p{
-    font-size: 20px;
-    margin-top: 10px;
-    line-height: 1.5;
-}
-.content p span{
-    font-size: small;
-    margin-left: 100px;
-}
-@media (max-width: 768px){
-    .image-section{
-        width: 100%;
-        float: none;
-    }
-    .content{
-        width: 100%;
-        float: none;
-        margin-left: 0px;
-    }
+.actor img{
+    align-items: end;
+    width: 30%;
+    position: absolute;
+    top: 0;
+    left: 20%;
+    margin-top: 100px;
 }

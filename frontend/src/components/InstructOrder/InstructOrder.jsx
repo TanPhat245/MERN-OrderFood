@@ -39,7 +39,7 @@ const InstructOrder = () => {
               <img src={assets.eating} alt="" />
             </div>
             <h2>Thưởng thức</h2>
-            <p>Không cần suy nghĩ chỉ cần hâm và thưởng thức!</p>
+            <p>Không cần suy nghĩ chỉ cần mở ra và thưởng thức ngay!</p>
           </div>
         </div>
       </div>

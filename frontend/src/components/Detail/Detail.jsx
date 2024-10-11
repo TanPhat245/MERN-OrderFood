@@ -4,12 +4,12 @@ import { assets } from '../../assets/assets'
 
 const Detail = () => {
   return (
-    <div className="wrapper">
-      <div className="row">
-        <div className="image-section">
-          <img src={assets.congphing} alt="" />
-        </div>
-        <div className="content">
+    <div className="banner-card">
+    <img src={assets.bg_test} alt="" />
+    <div className='actor'>
+    <img src={assets.congphing} alt="" />
+    </div>
+        <div className="banner-content">
           <h2>FUT88</h2>
           <p>Gà kia ai rán mà giòn
           <p>Cam kia ai bổ mà mòn cả dao</p>
@@ -21,7 +21,6 @@ const Detail = () => {
           </p>
         </div>
       </div>
-    </div>
   )
 }
 

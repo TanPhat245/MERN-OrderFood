@@ -1,8 +1,10 @@
+
 .navbar{
     padding: 20px 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    scroll-behavior: smooth;
 }
 .navbar .logo{
     width: 150px;
